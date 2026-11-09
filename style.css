@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Grid-Template-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Grid-Template-1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 30%;
+    margin: 0 auto;
+}
+
+.Grid-Template-1-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgray;
+    color: black;
+    border: 2px solid black;
+    font-size: 20px;
+    
+}
+
+.Grid-Template-1 :nth-child(1) {
+    grid-row: span 2;
+}
+
+.Grid-Template-1 :nth-child(4) {
+     grid-row: span 2;
+}
+
+.Grid-Template-1 :nth-child(5) {
+     grid-row: span 2;
+}
+
+
+.Grid-Template-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 25%;
+    margin: 0 auto;
+}
+
+.Grid-Template-2-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgray;
+    color: black;
+    border: 2px solid black;
+    font-size: 20px;
+    
+}
+
+.Grid-Template-2 :nth-child(1) {
+    grid-column: span 2;
+}
+
+.Grid-Template-2 :nth-child(4) {
+    grid-row: span 2;
+}
+
+.Grid-Template-2 :nth-child(5) {
+    grid-column: span 2;
+}
+
+.Grid-Template-2 :nth-child(8) {
+    grid-column: span 2;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+}
